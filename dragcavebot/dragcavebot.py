@@ -2,7 +2,7 @@ import sys
 
 from PyQt6.QtWidgets import QApplication
 
-from controller import Application
+from dragcavebot.controller import Application
 
 
 def main():

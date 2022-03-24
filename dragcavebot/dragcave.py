@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup as soup
 
-from dragons import dragons_description_to_name
+from dragcavebot.dragons import dragons_description_to_name
 
 
 class DragCave:

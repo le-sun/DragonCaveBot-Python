@@ -23,8 +23,8 @@ from PyQt6.QtWidgets import (
     QWidget,
 )
 
-from dragcave import DragCave
-from dragons import dragons
+from dragcavebot.dragcave import DragCave
+from dragcavebot.dragons import dragons
 
 
 workers_mutex = QMutex()
