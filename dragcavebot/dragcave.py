@@ -35,6 +35,39 @@ class DragCave:
             return True
         return False
 
+    def logout(self):
+        print("Logging out")
+        # Temp logout
+        res = requests.get(
+            f"{self.base_url}/logout",
+            cookies=self.cookies,
+        )
+
+        # request = requests.Request(
+        #     "POST",
+        #     f"{self.base_url}/account/sessions",
+        #     files={
+        #         "logout": self.cookies["s"]
+        #     },
+        #     cookies=self.cookies,
+        #     headers={
+        #         "Content-Type": "application/x-www-form-urlencoded"
+        #     }
+        # ).prepare()
+        # session = requests.Session()
+        # res = session.send(request)
+        # res = requests.post(
+        #     f"{self.base_url}/account/sessions",
+        #     files=dict(logout=self.cookies["s"]),
+        #     cookies=self.cookies,
+        #     headers={
+        #         "Content-Type": "application/x-www-form-urlencoded"
+        #     }
+        # )
+        # print(res.content)
+        # print(res.status_code)
+        print("Logged out")
+
     def get_available_eggs(self, location):
         eggs = []
         try:

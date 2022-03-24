@@ -273,3 +273,12 @@ class Application(QMainWindow):
 
     def login_callback(self):
         self.setCentralWidget(self.main_widget)
+
+    def closeEvent(self, event):
+        try:
+            if not isinstance(self.centralWidget(), LoginWidget):
+                self.cave.logout()
+        except Exception as e:
+            print(e)
+        finally:
+            super().closeEvent(event)
