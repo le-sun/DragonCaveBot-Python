@@ -87,6 +87,8 @@ class DragCave:
                     eggs.append((name, egg_result))
         except requests.exceptions.ReadTimeout as e:
             print(e)
+        except Exception as e:
+            print(e)
         return eggs
 
     def get_egg(self, egg_link):

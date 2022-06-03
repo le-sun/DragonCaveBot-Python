@@ -160,12 +160,12 @@ class MainWidget(QWidget):
             # Only real world time matters, so perf_counter is not needed
             start_time = time.time()
 
-            while time.time() - start_time < 70:
+            while time.time() - start_time < 60:
                 results = self.cave.get_available_eggs(location)
                 for result in results:
                     egg_name, status = result
                     self.info.emit(f"{egg_name}: {status}")
-                time.sleep(1) 
+                time.sleep(3) 
 
         def task(self):
             thread = QThread.currentThread()

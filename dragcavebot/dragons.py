@@ -16,6 +16,9 @@ dragons = (
         ("Xenowyrm", "Mana courses throughout this glassy egg."),
         ("BlusangLindwurm", "This egg smells faintly like brine."),
         ("Copper", "This egg gleams with a reddish shine."),
+        ("Zyumorph", "This shiny egg seems to radiate power."),
+        ("Lunar Herald", "This metallic egg shows faint iridescence in moonlight."),
+        ("AeonWyvern", "It’s almost like time is distorted around this egg."),
 )
 
 dragons_name_to_description = {key: val for key, val in dragons}
